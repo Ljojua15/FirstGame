@@ -14,22 +14,46 @@ export class PlayPlaceComponent {
     console.log(this.name + 'sdasd');
   }
 
-  onClick(cut: boolean): void {
-    console.log('asdfsdgsdg');
-  }
-}
+  changeImg(hand: hands): void {
+    // this.hand.forEach((item) => {
+    //   if (item.id === 1) {
+    //     console.log('sd');
+    //   } else if (item.id === 2) {
+    //     console.log('aaaa');
+    //   } else if (item.id === 3) {
+    //     console.log('item');
+    //   }
+    // });
 
-// hand: hands[] = [
-//   {
-//     id: 1,
-//     img: '../../../assets/images/changa/1.png',
-//   },
-//   {
-//     id: 2,
-//     img: '../../../assets/images/changa/2.png',
-//   },
-//   {
-//     id: 3,
-//     img: '../../../assets/images/changa/3.png',
-//   },
-// ];
+    switch (hand.id) {
+      case 1:
+        console.log('sd');
+        console.log(hand.img);
+        break;
+      case 2:
+        console.log('aaaa');
+        break;
+      case 3:
+        console.log('item');
+        break;
+      default:
+        // Handle the default case if none of the above cases match
+        break;
+    }
+  }
+
+  hand: hands[] = [
+    {
+      id: 1,
+      img: '../../../assets/images/changa/1.png',
+    },
+    {
+      id: 2,
+      img: '../../../assets/images/changa/2.png',
+    },
+    {
+      id: 3,
+      img: '../../../assets/images/changa/3.png',
+    },
+  ];
+}

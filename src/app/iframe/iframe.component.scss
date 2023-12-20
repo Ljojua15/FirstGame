@@ -15,7 +15,10 @@
   &__body{
     width: 800px;
     height: 450px;
-    background-color: red;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__timer{
     width: 800px;
