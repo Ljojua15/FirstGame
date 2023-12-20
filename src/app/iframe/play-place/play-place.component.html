@@ -1,11 +1,18 @@
 <div class="main">
   <div class="main__comp property">
-
+    <div class="main__player__control">
+      <div class="main__player__control__main  like" (click)="changeImg(hands)" *ngFor="let hands of hand"><img [src]="hands.img" alt=""></div>
+    </div>
+    <div class="main__player__place">
+      <div class="main__player__place__play">
+        <img class="" [src]="changeScreenImg" alt="">
+      </div>
+    </div>
   </div>
   <div class="main__player property">
       <div class="main__player__place">
-        <div class="main__player__place__play"  [ngStyle]="{ 'background-image': 'url(' + name + ')' }">
-          <img class="" src="../../../assets/images/changa/1.webp" alt="">
+        <div class="main__player__place__play">
+          <img class="" [src]="changeScreenImg" alt="">
         </div>
       </div>
       <div class="main__player__control">

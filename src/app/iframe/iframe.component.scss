@@ -11,6 +11,9 @@
     width: 800px;
     height: 100px;
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__body{
     width: 800px;
@@ -24,6 +27,9 @@
     width: 800px;
     height: 150px;
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__footer{
     width: 800px;

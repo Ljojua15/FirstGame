@@ -8,7 +8,9 @@ import { hands } from 'src/shared/models/hand';
 })
 export class PlayPlaceComponent {
   @Input() name!: string;
-  cut: boolean = false;
+
+  changeScreenImg: string = '';
+
   ngOnChanges(changes: SimpleChanges): void {
     this.name = `./assets/images/changa/${this.name}.webp`;
     console.log(this.name + 'sdasd');
@@ -27,17 +29,19 @@ export class PlayPlaceComponent {
 
     switch (hand.id) {
       case 1:
-        console.log('sd');
-        console.log(hand.img);
+        this.changeScreenImg = hand.img;
+
         break;
       case 2:
-        console.log('aaaa');
+        this.changeScreenImg = hand.img;
+
         break;
       case 3:
-        console.log('item');
+        this.changeScreenImg = hand.img;
+
         break;
       default:
-        // Handle the default case if none of the above cases match
+        this.changeScreenImg = '../../../assets/images/changa/1.png';
         break;
     }
   }
