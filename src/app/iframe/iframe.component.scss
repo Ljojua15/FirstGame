@@ -1,0 +1,30 @@
+.mainiframe{
+  width: 1024px;
+  height: 900px;
+  margin: auto;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  &__header{
+    width: 800px;
+    height: 100px;
+    background-color: red;
+  }
+  &__body{
+    width: 800px;
+    height: 450px;
+    background-color: red;
+  }
+  &__timer{
+    width: 800px;
+    height: 150px;
+    background-color: red;
+  }
+  &__footer{
+    width: 800px;
+    height: 150px;
+    background-color: red;
+  }
+}
